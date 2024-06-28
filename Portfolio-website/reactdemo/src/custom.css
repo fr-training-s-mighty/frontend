@@ -1,3 +1,13 @@
 body{
     font-family: 'Arial, sans-serif';
 }
+.bg-success{
+    background-color: #00A651 !important;
+}
+.bg-dark{
+    background-color: #004225 !important;
+}
+
+.text-white{
+    color: #ffffff;
+}
