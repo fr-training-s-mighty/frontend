@@ -7,11 +7,11 @@ function HealthTips(){
         'Vote for Modi',
     ]);
     return(
-        <div>
+        <div className="container mt-4">
             <h2>Health Tips</h2>
-            <ul>
+            <ul className="list-group">
                 {tips.map((tip,index) => (
-                    <li key ={index}>{tip}</li>
+                    <li key ={index} className="list-group-item">{tip}</li>
                 ))}
             </ul>
         </div>

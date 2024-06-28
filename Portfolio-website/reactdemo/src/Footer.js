@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer(){
     return(
-        <header>
+        <header className="bg-dark text-white text-centre py-3">
             <p>Modi ka pyaar</p>
         </header>
     );
