@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import HealthTips from './HealthTips';
+import ConditionalRendering from './ConditionalRendering';
 
 function App() {
   return (
     <div className="App">
-      <HealthTips/>
+      <ConditionalRendering/>
     </div>
   );
 }
