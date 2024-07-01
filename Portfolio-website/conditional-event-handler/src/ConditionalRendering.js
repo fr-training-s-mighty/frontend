@@ -23,11 +23,18 @@ class ConditionalRendering extends React.Component{
 
         <div className="container mt-4">
             <h2>Conditional Rendering </h2>
-
+            {this.state.isLoggedIn ? (
             <div>
                 <p>Welcome back, valued user</p>
-                <button className="btn btn-danger"> Logout </button>
+                <button className="btn btn-danger" onClick={this.handleLogout}> Logout </button>
             </div>
+            ): (
+                <div>
+                    <p>Login</p>
+                    <button className="btn btn-primary" onClick={this.handleLogin}>Sign</button>
+                </div>
+            )}
+
         </div>
         );
     }
