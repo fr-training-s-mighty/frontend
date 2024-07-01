@@ -1,0 +1,13 @@
+.green-btn {
+    background-color: #28a745 n !important;
+    border-color: #28a754 !important;
+}
+
+.green-btn:hover {
+background-color: #218838 !important;
+border-color: #1e7e34 !important;
+}
+
+.button-spacing {
+    margin-right: 10px !important;
+}
