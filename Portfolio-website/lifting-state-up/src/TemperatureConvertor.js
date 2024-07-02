@@ -1,5 +1,7 @@
 // this is a function
 import React,{useState} from 'react';
+import CelsiusInput from './CelsiusInput';
+import FahrenheitDisplay from './FahrenheitDisplay';
 
 function TemperatureConvertor(){
     const [temperature,setTemperature] = useState("");
@@ -11,6 +13,8 @@ function TemperatureConvertor(){
             <h2>
                 Temperature Convertor
             </h2>
+            <CelsiusInput temperature={temperature} onTemperatureChange={handleTemperatureChange}/>
+            <FahrenheitDisplay temperature={temperature}/>
         </div>
     );
 
