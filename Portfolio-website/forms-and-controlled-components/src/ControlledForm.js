@@ -37,6 +37,15 @@ class ControlledForm extends React.Component{
             isValid = false;
             errors.name = 'Name is required ';
         }
+        if ( !email ) {
+            isValid =false;
+            errors.email = 'Email is required';
+
+        }else if (!/\S+@\S+|.|S+/.test(email)){
+            isValid = false;
+            errors.email = 'Email is invalid';
+        }
+
 
         this.setState({errors});
         return isValid;
@@ -64,6 +73,7 @@ class ControlledForm extends React.Component{
                             Email:
                             <input type='email' name='email' className='form-control'  value={this.state.email} onChange={this.handleChange}/>
                         </label>
+                        {errors.email && <div className='text-danger'>{errors.email}</div>}
                     </div>
                     <div className='form-group'>
                         <label>
