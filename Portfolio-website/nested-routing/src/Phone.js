@@ -7,4 +7,4 @@ const Phone = () => (
     </div>
 )
 
-export default Phone  ;
+export default Phone;
